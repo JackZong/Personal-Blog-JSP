@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//WebRoot/admin/articleEdit.jsp=UTF-8
+encoding//WebRoot/admin/errorPage.jsp=UTF-8
+encoding//WebRoot/admin/footer.html=UTF-8
+encoding//WebRoot/admin/login.jsp=UTF-8
+encoding//WebRoot/admin/nav.html=UTF-8
+encoding//WebRoot/admin/sidebar.html=UTF-8
+encoding//WebRoot/home/footer.html=UTF-8
+encoding//WebRoot/home/nav.html=UTF-8
+encoding//WebRoot/home/query.jsp=UTF-8
+encoding//WebRoot/home/right.html=UTF-8
+encoding//src/admin/IUserDAO.java=UTF-8
+encoding//src/admin/LoginServlet.java=UTF-8
+encoding//src/admin/UserDAOImpl.java=UTF-8
+encoding//src/admin/UserDAOProxy.java=UTF-8
+encoding//src/home/category.java=UTF-8
+encoding/<project>=UTF-8

@@ -1,0 +1,42 @@
+<%@ page contentType="text/html;charset=utf-8"%>
+<%@page import="beans.friendLink"%>
+<%@page import="dao.friendLinkDao"%>
+<section class="page-footer">
+<div class="container">
+	<div class="row">
+
+		<div class="col-md-4">
+		<div class="about-wrapper">
+			<h4 class="foot-item-head">文章归档</h4>
+			<ul>
+			  <li><a class="ln-about" href="{:U('Index/month',array('month'=>$m))}">2015年01月</a></li>
+			  <li><a class="ln-about" href="{:U('Index/month',array('month'=>$m))}">2015年02月</a></li>
+			  <li><a class="ln-about" href="{:U('Index/month',array('month'=>$m))}">2015年03月</a></li>
+			  <li><a class="ln-about" href="{:U('Index/month',array('month'=>$m))}">2015年04月</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<h4 class="foot-item-head">友情链接</h4>
+		<% friendLinkDao fld = new friendLinkDao();
+			ArrayList<friendLink> flist = fld.queryAllLink();
+			for(friendLink flist1:flist){
+		%>
+		<a href="<%=flist1.getUrl()%>" target="_blank"><%=flist1.getName()%></a><br/>
+		
+		<%}%>
+	</div>
+	<div class="col-md-4">
+			<span class="h4">关注作者: </span>&nbsp;
+			<a href="https://github.com/jackzong" target="_blank"><img class="img" src="<%=path%>/public/assets/global/img/github.png"></a> &nbsp;&nbsp;
+			<a href="" target="_blank"><img class="img" src="<%=path%>/public/assets/global/img/stackoverflow.png"></a> &nbsp;&nbsp;
+			<a href="" target="_blank"><img class="img" src="<%=path%>/public/assets/global/img/segmentfault.png"></a> 	
+			<br><br><br>
+			<a href="login">后台管理</a>
+	</div>
+	</div>
+</div>
+</div>
+	</div>
+</div>
+</section>

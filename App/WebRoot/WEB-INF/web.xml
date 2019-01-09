@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servlet</servlet-name>
+    <servlet-class>servlets.servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>category</servlet-name>
+    <servlet-class>home.category</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>detail</servlet-name>
+    <servlet-class>home.detail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>login</servlet-name>
+    <servlet-class>admin.login</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>admin.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>articleEdit</servlet-name>
+    <servlet-class>admin.articleEdit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>articleAdd</servlet-name>
+    <servlet-class>admin.articleAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>fLink</servlet-name>
+    <servlet-class>admin.fLink</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>categoryManage</servlet-name>
+    <servlet-class>admin.categoryManage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>articleAll</servlet-name>
+    <servlet-class>admin.articleAll</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>doAdd</servlet-name>
+    <servlet-class>admin.doAdd</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>category</servlet-name>
+    <url-pattern>/home/category</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>detail</servlet-name>
+    <url-pattern>/home/detail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/admin/login</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>servlet</servlet-name>
+        <url-pattern>/home/index</url-pattern>
+    </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/admin/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>articleEdit</servlet-name>
+    <url-pattern>/admin/articleEdit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>articleAdd</servlet-name>
+    <url-pattern>/admin/articleAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>fLink</servlet-name>
+    <url-pattern>/admin/fLink</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>categoryManage</servlet-name>
+    <url-pattern>/admin/categoryManage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>articleAll</servlet-name>
+    <url-pattern>/admin/articleAll</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>doAdd</servlet-name>
+    <url-pattern>/admin/doAdd</url-pattern>
+  </servlet-mapping>
+    <servlet>
+        <servlet-name>doDelete</servlet-name>
+        <servlet-class>admin.doDelete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>doDelete</servlet-name>
+        <url-pattern>/admin/doDelete</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>doEdit</servlet-name>
+        <servlet-class>admin.doEdit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>doEdit</servlet-name>
+        <url-pattern>/admin/doEdit</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>addNav</servlet-name>
+        <servlet-class>admin.addNav</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addNav</servlet-name>
+        <url-pattern>/admin/addNav</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>doNav</servlet-name>
+        <servlet-class>admin.doNav</servlet-class>
+    </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>delNav</servlet-name>
+    <servlet-class>admin.delNav</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>search</servlet-name>
+    <servlet-class>home.search</servlet-class>
+  </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>doNav</servlet-name>
+        <url-pattern>/admin/doNav</url-pattern>
+    </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delNav</servlet-name>
+    <url-pattern>/admin/delNav</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>search</servlet-name>
+    <url-pattern>/home/search</url-pattern>
+  </servlet-mapping>
+
+</web-app>
